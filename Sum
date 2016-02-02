@@ -1,0 +1,18 @@
+numb=input('Введите порядковый номер числа Фибоначчи, чтобы посчитать сумму.')
+numb=int(numb)
+a=2
+numb1=1
+numb2=1
+x=3
+Sum=2
+if numb==1:
+    Sum=1
+while a<numb:
+    FibNumb=numb1+numb2
+    numb1=numb2
+    numb2=FibNumb
+    a=a+1
+    Sum=Sum+FibNumb
+print('Сумма',numb,'чисел равна',Sum,'.')
+input()
+    
